@@ -1,0 +1,926 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    outline: 1px solid black;
+}
+
+/* 增加外圍線框 */
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* start */
+/* 設定 */
+body {
+    font-family: "Noto Sans TC", serif;
+}
+
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+}
+
+.img-icon {
+    max-width: 80px;
+}
+
+/* width */
+.width-80 {
+    max-width: 80px;
+}
+
+.width-83 {
+    max-width: 83.83px;
+}
+
+.width-306 {
+    max-width: 306px;
+}
+
+.width-416 {
+    max-width: 416px;
+}
+
+.width-636 {
+    max-width: 636px;
+}
+
+.width-648 {
+    max-width: 648px;
+}
+
+.max-w-1368 {
+    max-width: 1368px;
+}
+
+.width100 {
+    width: 100%;
+}
+
+.height-511 {
+    height: 511px;
+}
+
+.row-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row-12 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* padding */
+.p-16 {
+    padding: 16px;
+}
+
+.pt-48 {
+    padding-top: 48px;
+}
+
+.pb-32 {
+    padding-bottom: 32px;
+}
+
+.ptb-80 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.ptb-16 {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.ptb-8 {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.ptb-6 {
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.plr-12 {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.plr-32 {
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.pl-32 {
+    padding-left: 32px;
+}
+
+.plr-36 {
+    padding-left: 36px;
+    padding-right: 36px;
+}
+
+.plr-176 {
+    padding-left: 176px;
+    padding-right: 176px;
+}
+
+.plr-312 {
+    padding-left: 312px;
+    padding-right: 312px;
+}
+
+.plr-642 {
+    padding-left: 642px;
+    padding-right: 642px;
+}
+
+/* margin */
+.ml-110 {
+    margin-left: 110px;
+}
+
+.mr-48 {
+    margin-right: 48px;
+}
+
+.mr-auto {
+    margin-right: auto;
+}
+
+.mr-312 {
+    margin-right: 312px;
+}
+
+.mt-32 {
+    margin-top: 32px;
+}
+
+.mt-296 {
+    margin-top: 296px;
+}
+
+.mb-8 {
+    margin-bottom: 8px;
+}
+
+.mb-16 {
+    margin-bottom: 16px;
+}
+
+.mb-24 {
+    margin-bottom: 24px;
+}
+
+.mb-32 {
+    margin-bottom: 32px;
+}
+
+.mb-48 {
+    margin-bottom: 48px;
+}
+
+/* font-size */
+.font-14 {
+    font-size: 14px;
+}
+.font-16{
+    font-size: 16px;
+}
+
+.font-20 {
+    font-size: 20px;
+}
+
+.font-36 {
+    font-size: 36px;
+}
+
+.font-48 {
+    font-size: 48px;
+}
+
+.font-64 {
+    font-size: 64px;
+}
+
+.block {
+    display: block;
+}
+
+/* line-hight */
+.line-hight-21 {
+    line-height: 21px;
+}
+
+.line-hight-24 {
+    line-height: 24px;
+}
+
+.line-hight-30 {
+    line-height: 30px;
+}
+
+.line-hight-54 {
+    line-height: 54px;
+}
+
+.line-hight-72 {
+    line-height: 72px;
+}
+
+.line-hight-96 {
+    line-height: 96px;
+}
+
+.img-home {
+    background-image: url(img/home-header.png);
+    width: 100%;
+    height: 787px;
+    background-size: cover;
+    background-position: center;
+
+}
+
+/* color */
+.color-dark {
+    color: #707070;
+}
+
+.white {
+    color: #FFFFFF;
+}
+
+.color-650300 {
+    color: #650300;
+}
+
+.color-aa0601 {
+    color: #AA0601;
+}
+
+.background-color-fbf2f2 {
+    background-color: #FBF2F2;
+}
+
+.background-color-aa0601 {
+    background-color: #AA0601;
+}
+
+.background-color-ffffff {
+    background-color: #FFFFFF;
+}
+
+.text-align-end {
+    text-align: end;
+
+}
+
+.flex-1 {
+    display: flex;
+    justify-content: end;
+}
+
+.width-67-5 {
+    width: 67.5%;
+}
+
+.container header {
+    display: flex;
+}
+
+.jb-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: end;
+
+}
+
+.hide-312 {
+    width: 16.25%;
+}
+
+.row-2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* 裡面的字跟圖片都會置中 */
+    gap: 24px;
+    /* 也可以這樣做
+    column-gap: 24px;
+    row-gap: 24px; */
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: bold;
+    color: #650300;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.text-align-start {
+    text-align: start;
+}
+
+h2 {
+    font-size: 48px;
+    line-height: 72px;
+    font-weight: bold;
+    color: #650300;
+}
+
+h1 {
+    font-size: 64px;
+    line-height: 96px;
+    font-weight: bold;
+    color: #650300;
+}
+
+p {
+    line-height: 24px;
+}
+
+.font-style-italic {
+    font-style: italic;
+}
+
+.row-3 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.background-image-section4 {
+    background-image: url(img/index-bg.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.row-4 {
+    display: flex;
+    justify-content: center;
+    /* height: 511px; */
+    gap: 24px;
+}
+
+.row-5 {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 2px 6px #00000029;
+    border: 1px solid #DEE2E6;
+    border-radius: 4px;
+    opacity: 1;
+}
+
+.row-5 img {
+    border-radius: 4px 4px 0px 0px;
+}
+
+.position-ab-section5 {
+    position: relative;
+}
+
+.position-re-section5 {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+}
+
+.font-weight-500 {
+    font-weight: 500;
+}
+
+.font-weight-bold {
+    font-weight: bold;
+}
+
+.input-col {
+    width: 100%;
+    line-height: 27.68px;
+    margin-bottom: 16px;
+    background-color:#FBF2F2;
+}
+
+textarea {
+    width: 100%;
+    height: 136px;
+    margin-bottom: 16px;
+}
+
+.row-6 {
+    display: flex;
+    /* align-items: center; */
+    column-gap: 4px;
+    margin-bottom: 48px;
+}
+
+.width-65 {
+    width: 65.408%;
+}
+
+.row-7 {
+    display: flex;
+    justify-content: center;
+}
+
+.row-8 {
+    display: flex;
+    gap: 48px;
+}
+
+.row-8 a {
+    color: #FFFFFF;
+    line-height: 24px;
+}
+
+.row-9 {
+    display: flex;
+    gap: 32px;
+}
+
+.width-48 {
+    max-width: 48px;
+}
+
+.row-10 {
+    display: flex;
+    align-items: baseline;
+    gap: 22px;
+}
+
+.width-36 {
+    max-width: 36px;
+}
+
+.row-10 p {
+    color: #FFFFFF;
+    font-size: 36px;
+    line-height: 54px;
+}
+
+.row-11 {
+    display: flex;
+    align-items: center;
+}
+
+hr {
+    border: 1px solid #FFFFFF;
+}
+
+.row-11 p {
+    line-height: 21px;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+textarea {
+    resize: none;
+}
+
+input[type="checkbox"]{
+    accent-color: #aa0601;
+    width: 16px;
+    height: 16px;
+    border-radius: 0px;
+
+}
+label{
+    line-height: 24px;
+    font-size: 16px;
+}
+.check-info{
+    align-self: center;
+    line-height: 24px;
+}
+
+.form {
+    max-width: 664px;
+    width: 100%;
+    padding-left: 14px;
+    padding-right: 14px;
+    margin: 0 auto;
+}
+.form button{
+    font-family: "Noto Sans TC", serif;
+}
+
+.m-0auto {
+    margin: 0 auto;
+}
+
+
+
+/* 螢幕寬度小於或等於 1140px 時（通常是平板尺寸），打開以下樣式 */
+@media(max-width: 1140px) {
+
+    /* rwd section-2 */
+    .section-2 ul {
+        flex-wrap: wrap;
+    }
+
+    .section-2 li {
+        max-width: 336px;
+    }
+
+    /* rwd section-3 */
+    .section-3 ul {
+        flex-wrap: wrap;
+
+    }
+
+    .section-3 li {
+        max-width: 336px;
+
+    }
+
+    /* rwd section-4 */
+    .section-4 ul {
+        flex-wrap: wrap;
+    }
+
+    .section-4 li {
+        max-width: 696px;
+    }
+
+    .section-4 .mb-24-hide {
+        margin-bottom: 24px;
+    }
+
+    /* rwd section-5 */
+    .section-5 ul {
+        flex-wrap: wrap;
+    }
+
+    .section-5 li {
+        max-width: 336px;
+    }
+
+    /* rwd section-6 */
+    .section-6 .form {
+        max-width: 604px;
+    }
+    .form h2{
+        margin-bottom: 24px;
+    }
+    .form button{
+        max-width: 336px;
+    }
+
+    /* footer */
+    footer .row-9 {
+        gap: 16px;
+    }
+
+    footer .row-9 li {
+        max-width: 40px;
+    }
+    footer .pb-32{
+        padding-bottom: 40px;
+    }
+
+
+
+}
+/* 螢幕寬度小於或等於 767px 時（通常是手機尺寸），打開以下樣式 */
+@media(max-width: 767px) {
+    /* all */
+    .plr-36{
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+    h2 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .font-hide {
+        font-size: 48px;
+        line-height: 72px;
+    }
+
+
+    /* rwd header */
+    .row-1 {
+        display: block;
+    }
+    .nav{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .header .plr-36{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .header .ptb-16{
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .row-1>a{
+        display: block;
+        padding: 16px;
+        
+
+    }
+    
+
+    .nav a {
+        font-size: 16px;
+        line-height: 24px;
+        padding: 12px 0px;
+        border: 1px solid white;
+        width: 50%;
+    }
+
+    /* rwd section-1 */
+    .section-1 .img-home{
+        background-image: url(img/home-header-sm.png);
+        height: 396px;
+    }
+    .section-1 p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .section-1 h1 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+
+    /* rwd section-2 */
+    .section-2{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .section-2 ul li {
+        max-width: 348px;
+    }
+
+    /* rwd section-3 */
+    .section-3{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .section-3 .mb-48{
+        margin-bottom: 24px;
+    }
+    /* rwd section-4 */
+    .section-4{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .section-4 .mb-48{
+        margin-bottom: 24px;
+    }
+    /* rwd section-5 */
+    .section-5{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .section-5 .mb-48{
+        margin-bottom: 24px;
+    }
+    .section-5 li {
+        max-width: 348px;
+    }
+
+    /* rwd section-6 */
+    .section-6{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .section-6 .mb-48{
+        margin-bottom: 24px;
+
+    }
+    .section-6 .form {
+        max-width: 376px;
+    }
+    .form .row-6{
+        margin-bottom: 24px;
+    }
+    
+    .form button{
+        max-width: 450px;
+    }
+    .form>p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    /* footer */
+    footer .row-8 {
+        display: none;
+    }
+
+    footer .row-11 {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 8px;
+    }
+    .footer-position {
+        position: relative;
+    }
+    .footer .mb-24{
+        margin-bottom: 0px;      
+    }
+    .footer hr{
+        margin-top: 24px;
+        margin-bottom: 16px;
+    }
+
+    footer .row-9 {
+        gap: 8px;
+        position: absolute;
+        right: 14px;
+
+    }
+    .footer{
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    footer .row-9 li {
+        max-width: 24px;
+    }
+
+    footer .row-10 p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    footer .width-20-hide {
+        max-width: 20px;
+    }
+
+    footer .footer-position .plr-36 {
+        padding-right: 14px;
+        padding-left: 14px;
+    }
+
+}
