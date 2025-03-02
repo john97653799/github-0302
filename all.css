@@ -314,6 +314,9 @@ nav {
 .mt-296 {
     margin-top: 296px;
 }
+.mb-4{
+    margin-bottom: 4px;
+}
 
 .mb-8 {
     margin-bottom: 8px;
@@ -808,6 +811,7 @@ label{
     .section-1 h1 {
         font-size: 24px;
         line-height: 36px;
+        margin-bottom: 8px;
     }
 
 
